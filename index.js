@@ -16,7 +16,7 @@ app.get('/api/greetings', async (req, res) => {
 });
 
 app.post('/api/greetings', async(req, res) =>{
-  const greetings =req.body.greeting;
+  const greeting =req.body.greeting;
   const language = req.body.language;
 
   await addGreeting(language, greeting)
